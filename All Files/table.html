@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>table html</title>
+	<style>
+		table,th,td{
+			border: 3px solid #9D1616;
+			border-collapse: collapse;
+			padding: 3px;
+			width: 500px;
+			height: 100px;
+			}
+	</style>
+</head>
+<body>
+	<h1>simple table</h1>
+	<table>
+		<tr>
+			<th>sl</th>
+			<th>name</th>
+			<th>roll</th>
+		</tr>
+		<tr>
+			<td>sl</td>
+			<td>name</td>
+			<td>roll</td>
+		</tr>
+		<tr>
+			<td>sl</td>
+			<td>name</td>
+			<td>roll</td>
+		</tr>
+	</table>
+	<h2>col and row span</h2>
+	<table>
+		<tr>
+			<th colspan="3">colspan</th>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td rowspan="3">rowspan</td>
+			<td>c</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>c</td>
+		</tr>
+		<tr>
+			<td>a</td>
+			<td>c</td>
+		</tr>
+	</table><br>
+
+
+
+	<h2>table with thead,tbody,tfoot</h2>
+
+
+	<table>
+		<thead style="text-align: right">
+			<tr>
+				<td>sl</td>
+				<td>name</td>
+				<td>roll</td>
+			</tr>
+		</thead>
+		<tbody style="text-align:left">
+			<tr>
+				<td>1</td>
+				<td>sk</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>sd</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>sl</td>
+				<td>25</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3s" style="text-align: center">there are three students total</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<h2>colgroup</h2>
+
+
+	<table>
+		<colgroup>
+			<col span="" style="background-color: hotpink;">
+			<col span="3" style="background-color: palegreen;">
+		</colgroup>
+		<thead style="background-color: seagreen; color: moccasin; border: 4px solid pink;">
+			<tr>
+				<th>name</th>
+				<th>id</th>
+				<th>address</th>
+				<th>placement</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>shakil</td>
+			<td>24</td>
+			<td>dhaka</td>
+			<td>students</td>
+		</tr>
+		<tr>
+			<td>maruf</td>
+			<td>154</td>
+			<td>dhaka</td>
+			<td>students</td>
+		</tr>
+	</table>
+</body>
+</html>

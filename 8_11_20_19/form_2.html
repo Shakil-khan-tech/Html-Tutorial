@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>html form 2</title>
+</head>
+<body bgcolor="#A21E1E">
+	<h2 align="middle">registration form</h2>
+	<form action="" method="post">
+		<!-- input types :text,number,radio,submit,email. textbox for textarea,  -->
+		<fieldset>
+			<legend>personal information</legend>
+		<label for="fullname">fullname:</label><br>
+		<input type="text" name="fullname" placeholder="enter your full name"><br>
+		<label for="gender">gender:</label><br>
+		male<input type="radio" name="gender" value="male">
+		female<input type="radio" name="gender" value="female" checked>
+		<br>
+		<label for="email">email:</label><br>
+		<input type="email" name="email" placeholder="enter your email"><br>
+		<label for="district">districts:</label><br>
+		<select name="district" size="">
+		<option value="" hidden="">select one</option>
+		<optgroup label="dhaka">
+		<option value="dhaka">dhaka</option>
+		<option value="gazipur">gazipur</option>
+		<option value="madaripur">madaripur</option>
+
+		</optgroup>	
+		<optgroup label="rajshahi">
+		<option value="rajshahi">rajshahi</option>
+		<option value="chapainobab">chapainobab</option>
+		<option value="akhara">akhara</option>
+		</optgroup>	
+		<optgroup label="khulna">
+		<option value="khulna">khulna</option>
+		<option value="chasara">chasara</option>
+		<option value="gombuj">gombuj</option>
+		</optgroup>
+        </select><br>
+
+		<label for="hobbies:">hobbies</label><br>
+		cricket <input type="checkbox" value="crkt" name="cricket">	
+		football <input type="checkbox" value="ftbl" name="football">	
+		cards <input type="checkbox" value="crd" name="cards">	
+		swiming <input type="checkbox" value="smg" name="swimming"><br>	
+		</fieldset>
+		<fieldset>
+			<legend>login info</legend>
+		<label for="pass1">password:</label><br>
+		<input type="password" name="pass1"><br>
+		<label for="pass2">repeat same password:</label><br>
+		<input type="password" name="pass2"><br>
+		</fieldset>
+		<input type="submit" name="submit" value="submit">
+	</form>
+</body>
+</html>

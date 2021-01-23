@@ -1,0 +1,48 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>colgroup practice</title>
+		<style>
+			table,td,h2{
+				border: 2px solid #D13B3B;
+				border-collapse: collapse;
+			}
+			th{
+				border:4px solid #E97238;
+				padding: 5px;
+				border-collapse: collapse;
+				background-color: #271AA5;
+				color: #C52BF8;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 align="center" style="color: #17B9F5">colomn grouping</h2><hr style="color: #C1F40E"><hr style=" color: #C50FF3">
+		<table align="center">
+			<colgroup>
+				<col style="background-color: #870505">
+				<col span="3" style="background-color: #12C81F">
+			</colgroup>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>QUANTITY</th>
+				<th>PRICE</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>RAM</td>
+				<td>3</td>
+				<td>1500</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>CPU</td>
+				<td>1</td>
+				<td>2000</td>
+			</tr>
+		</table>
+	</body>
+	</html>

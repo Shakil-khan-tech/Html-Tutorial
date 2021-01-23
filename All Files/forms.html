@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>html forms</title>
+	<style>
+		td{
+			padding: 25px;
+		}
+		table{
+			border: 15px solid palegreen;
+			text-align: right;
+			font-size: 23px;
+		}
+		h2{
+			text-align: center;
+			background-color: powderblue;
+		}
+	</style>
+</head>
+<body bgcolor="moccasin">
+	<h2>Normal form</h2>
+	<form action="" method="post">
+		<fieldset>
+			<input type="text" name="fname"  placeholder="Enter your first name"><br><br>
+			<input type="text" name="lname"  placeholder="Enter your last name"><br><br>
+			<input type="email" name="email"  placeholder="Enter your Email"><br><br>
+			<input type="number" name="phone"  placeholder="Enter your phone number"><br><br>
+			<textarea name="address" cols="30" rows="10" placeholder="Enter your address"></textarea><br><br>
+			Male<input type="radio" name="gender" checked>
+			Female<input type="radio" name="gender"><br><br>
+			<input type="submit" name="submit" value="SUBMIT">
+		</fieldset>
+	</form>
+	<hr>
+	<h2>LOGIN FORM</h2>
+	<form action="" method="post">
+		<fieldset>
+			<table align="center">
+				<tr>
+					<td>Enter your email or phone number:</td>
+					<td><input type="text" name="email or phone" placeholder="Enteryour email or phone"></td>
+				</tr>
+				<tr>
+					<td>Enter your password:</td>
+					<td><input type="password" name="password" placeholder="Enter your password"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="SUBMIT"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form><hr>
+
+	<h2>Registration from</h2>
+	<form action="" method="post">
+		<fieldset>
+			<legend>Personal information</legend>
+			<label for="">Fullname:</label><br>
+			<input type="text" name="fullname" placeholder="Enter your fullname"><br>
+			<label for="">Gender:</label><br>
+			Female<input type="radio" name="gender">
+			Male<input type="radio" name="gender"><br>
+			<label for="">Email:</label><br>
+			<input type="email" name="email" placeholder="Enter your email"><br>
+			<label for="">distict:</label><br>
+			<select name="disrict">
+				<option value="" hidden="">select one</option>
+				<optgroup label="dhaka">
+					<option value="dhaka">dhaka</option>
+					<option value="madaripur">madaripur</option>
+					<option value="faridpur">faridpur</option>
+					<option value="gazipur">gazipur</option>
+				</optgroup>
+				<optgroup label="barisal">
+					<option value="barisal">barisal</option>
+					<option value="bhola">bhola</option>
+					<option value="borguna">borguna</option>
+					<option value="jhalkathi">jhalkathi</option>
+				</optgroup>
+				<optgroup label="rajsahi">
+					<option value="rajsahi">rajsahi</option>
+					<option value="chapai">chapai</option>
+					<option value="sodor">sodor</option>
+					<option value="brahmon baria">brahmon baria</option>
+				</optgroup>
+			</select><br>
+			<label for="">Hobbies:</label>
+			Cricket<input type="checkbox" value="cricket" name="cricket">
+			Cards<input type="checkbox" value="cards" name="cards">
+			Chess<input type="checkbox" value="chess" name="chess">
+			Football<input type="checkbox" value="football" name="football"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Login info</legend>
+			<label for="">Password:</label><br>
+			<input type="password" name="password" placeholder="Enter your password"><br>
+			<label for="">Re-type password:</label><br>
+			<input type="password" name="password" placeholder="Re-type your password"><br>
+			<input type="submit" value="submit" name="SUBMIT">
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table,td{
+			border:1px solid black;
+			border-collapse: collapse;
+		}
+		thead{
+			color: #1D13F0;
+			background-color: #B2266B;
+			border: 2px solid #122CC8;
+		}
+		th{
+			border: 1px solid #7CA183;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+<h2>colgroup in table</h2>
+<table>
+	<COLGROUP>
+		<col style="background-color: #0E1F75">
+		<col span="3" style="background-color: #E616E4">
+	</COLGROUP>
+	<thead>
+	<tr>
+		<th>id</th>
+		<th>particular</th>
+		<th>quantity</th>
+		<th>price</th>
+	</tr>
+	</thead>
+	<tr>
+		<td>1</td>
+		<td>ram</td>
+		<td>5</td>
+		<td>100</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>cpu</td>
+		<td>2</td>
+		<td>900</td>
+	</tr>
+</table>
+</body>
+</html>
